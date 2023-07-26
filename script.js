@@ -30,8 +30,10 @@ window.onload = function() {
     context.fillRect(bird.x, bird.y, bird.width, bird.height);
 
 
-//load image
+//load image // add a function for the img to load it
 birdImg = new Image();
 birdImg.src = "./flappybird.png";
+birdImg.onload = function(){
 context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+}
 }
