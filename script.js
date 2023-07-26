@@ -5,6 +5,13 @@ let boardWidth = 360;
 let boardHeight = 640;
 let context;
 
+//bird parameters
+let birdWidth = 34; //width/height ratio = 400/228 = 17/12
+let birdHeight = 24;
+let birdX = boardWidth/8;
+let birdY = boardHeight/2;
+
+
 window.onload = function() {
     board = document.getElementById("board");
     board.height = boardHeight;
