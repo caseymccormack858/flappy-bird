@@ -31,9 +31,9 @@ window.onload = function() {
 
 
 //load image //
-birdImg = new Image();
-birdImg.src = "./flappybird.png";
-birdImg.onload = function() {
-context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+  birdImg = new Image();
+  birdImg.src = "./flappybird.png";
+  birdImg.onload = function() {
+      context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
 }
 }
