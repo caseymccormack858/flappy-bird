@@ -1,4 +1,4 @@
-//board
+//board //final javascript code
 let board;
 let boardWidth = 460;
 let boardHeight = 640;
