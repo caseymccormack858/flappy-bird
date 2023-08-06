@@ -8,4 +8,28 @@ body {
     /*background-color: skyblue; */
     background-image: url("./icons/background-img.png");
 }
- 
+@font-face {
+    font-family: 'Blox';
+    src: url('blox.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Blox' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: purple;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Style for the "Game Over" text */
+.game-over {
+    font-family: 'Blox', sans-serif;
+    font-size: 36px;
+    color: #5cc1ff; /* Red color for the arcade-style effect */
+    margin-top: 20px;
+}

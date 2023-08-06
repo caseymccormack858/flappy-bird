@@ -1,6 +1,6 @@
 //board
 let board;
-let boardWidth = 360;
+let boardWidth = 460;
 let boardHeight = 640;
 let context;
 
@@ -66,7 +66,12 @@ window.onload = function() {
 
 function update() {
     requestAnimationFrame(update);
-    if (gameOver) {
+    if (gameOver) { context.fillStyle = "#5cc1ff"; // Blue background for the text
+
+    context.fillStyle = "#5cc1ff"; // blue color for the text
+    context.font = "36px 'Blox', sans-serif"; // Use the arcade-style font
+    context.fillText("PLAY AGAIN", boardWidth / 2 - 90, boardHeight / 2 + 10); // Position and display the text
+
         return;
     }
     context.clearRect(0, 0, board.width, board.height);
@@ -104,7 +109,7 @@ function update() {
 
     //score
     context.fillStyle = "white";
-    context.font="45px sans-serif";
+    context.font="35px sans-serif";
     context.fillText(score, 5, 45);
 
     if (gameOver) {
